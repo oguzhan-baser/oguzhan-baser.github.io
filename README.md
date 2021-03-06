@@ -1,3 +1,3 @@
 # Oğuzhan Başer
-![pp_image](images/pp.JPG=50x50)
-![e-mail](oguzhan.baserr@gmail.com)
+<img src="images/pp.JPG" width="83.1" height="102.2" />
+e-mail: oguzhan.baserr@gmail.com
