@@ -1,3 +1,3 @@
-#Oğuzhan Başer
-#number bla bla
-hjbsdfjsf
+# Oğuzhan Başer
+Telephone: +905305764999
+e-mail: oguzhan.baserr@gmail.com
