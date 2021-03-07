@@ -244,8 +244,7 @@ The better use of sources, the better world.</span
                       </fieldset>
                     </div>
                   </div>
-                </form>
-                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>    
+                </form>    
               </div>
             </div>
           </div>
@@ -253,9 +252,10 @@ The better use of sources, the better world.</span
       </section>
     </div>
 
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
     <!-- Scripts -->
 	<!-- Bootstrap core JavaScript -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/isotope.min.js"></script>
     <script src="assets/js/owl-carousel.js"></script>
@@ -263,10 +263,9 @@ The better use of sources, the better world.</span
     <script src="assets/js/custom.js"></script>
         <!-- Form Script -->
 	<script type="text/javascript">
-		$('#gform').on('submit', function handler(e) {
-			e.preventDefault();
-	  		$('#forms').fadeOut(2000, function(){ $('form').off('submit', handler).submit();});
-	  		$('#forms').prepend('Your submission has been processed...');
+		$('#contact').on('submit', function(e) {
+	  		$('#row *').fadeOut(2000);
+	  		$('#row').prepend('Your submission has been processed...');
 			});
 	</script>
     <script>
