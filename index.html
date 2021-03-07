@@ -25,6 +25,7 @@
   </head>
 
   <body>
+  	<script type="text/javascript">var submitted=false;</script>
     <div id="page-wraper">
       <!-- Sidebar Menu -->
       <div class="responsive-nav">
@@ -243,8 +244,8 @@ The better use of sources, the better world.</span
                       </fieldset>
                     </div>
                   </div>
-					<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
                 </form>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
               </div>
             </div>
           </div>
@@ -261,7 +262,6 @@ The better use of sources, the better world.</span
     <script src="assets/js/lightbox.js"></script>
     <script src="assets/js/custom.js"></script>
         <!-- Form Script -->
-    <script type="text/javascript">var submitted=false;</script>
 	<script type="text/javascript">
 	$('#gform').on('submit', function(e) {
 	  $('#gform *').fadeOut(2000);
