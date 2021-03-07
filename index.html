@@ -189,15 +189,15 @@ The better use of sources, the better world.</span
           <div class="row">
             <div class="right-content">
               <div id="forms">
-                <form id="contact" action="sendemail.php" method="post">
+                <form name="gform" id="gform" enctype="text/plain"action="https://docs.google.com/forms/d/e/1FAIpQLSfeMJd0rlni9vh6WN_WicDAfBjpJz8Y26xKXruOcGDIDhu1gQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true";>
                   <div class="row">
                     <div class="col-md-6">
                       <fieldset>
                         <input
-                          name="name"
+                          name="entry.733037729"
                           type="text"
                           class="form-control"
-                          id="name"
+                          id="entry.733037729"
                           placeholder="Your name..."
                           required=""
                         />
@@ -206,10 +206,10 @@ The better use of sources, the better world.</span
                     <div class="col-md-6">
                       <fieldset>
                         <input
-                          name="email"
+                          name="entry.2026836219"
                           type="text"
                           class="form-control"
-                          id="email"
+                          id="entry.2026836219"
                           placeholder="Your email..."
                           required=""
                         />
@@ -218,10 +218,10 @@ The better use of sources, the better world.</span
                     <div class="col-md-12">
                       <fieldset>
                         <input
-                          name="subject"
+                          name="entry.805990037"
                           type="text"
                           class="form-control"
-                          id="subject"
+                          id="entry.805990037"
                           placeholder="Subject..."
                           required=""
                         />
@@ -230,10 +230,10 @@ The better use of sources, the better world.</span
                     <div class="col-md-12">
                       <fieldset>
                         <textarea
-                          name="message"
+                          name=".2036820621"
                           rows="6"
                           class="form-control"
-                          id="message"
+                          id=".2036820621"
                           placeholder="Your message..."
                           required=""
                         ></textarea>
@@ -248,6 +248,7 @@ The better use of sources, the better world.</span
                     </div>
                   </div>
                 </form>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
               </div>
             </div>
           </div>
@@ -256,6 +257,15 @@ The better use of sources, the better world.</span
     </div>
 
     <!-- Scripts -->
+    <!-- FormScripts -->
+    <script src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript">var submitted=false;</script>
+	<script type="text/javascript">
+	$('#gform').on('submit', function(e) {
+	  $('#gform *').fadeOut(2000);
+	  $('#gform').prepend('Your submission has been processed...');
+	  });
+	</script>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
