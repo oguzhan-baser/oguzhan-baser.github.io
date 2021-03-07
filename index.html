@@ -65,7 +65,7 @@ https://templatemo.com/tm-531-reflux
               </ul>
             </div>
             <div class="copyright-text">
-              <p>Copyright 2019 Reflux Design</p>
+              <p>O&#287uzhan Ba&#351er &#169 2021</p>
             </div>
           </div>
         </div>
@@ -189,7 +189,7 @@ The better use of sources, the better world.</span
           <div class="row">
             <div class="right-content">
               <div id="forms">
-                <form id="contact" action="sendmail.php" method="post">
+                <form id="contact" action="assets/php/sendmail.php" method="post">
                   <div class="row">
                     <div class="col-md-6">
                       <fieldset>
@@ -248,7 +248,6 @@ The better use of sources, the better world.</span
                     </div>
                   </div>
                 </form>
-                <a id="mylink" href="#"></a>
               </div>
             </div>
           </div>
@@ -258,43 +257,6 @@ The better use of sources, the better world.</span
 
     <!-- Scripts -->
     <!-- Bootstrap core JavaScript -->
-	<script>
-	    function sendEmail() {
-	        var  str = "name: " + document.forms.contact.name.value + "\n" + "email: " + document.forms.contact.email.value + "\n" + "subject: " + document.forms.contact.subject.value + "\n" +
-	            "text: " + document.forms.contact.message.value;      
-	        var link = document.getElementById("mylink");
-	        link.href="/mailto:oguzhan.baserr@gmail.com?subject=form submottion&body=" + str;
-	       clickLink(link);
-	        return false;
-	    } 
-
-
-	 function clickLink(link) {
-
-	   if (isIE())
-	   {
-	      link.click();
-	      return;
-	   }
-	   else if (document.createEvent)
-	   {
-	      var e = document.createEvent('MouseEvents');
-	      e.initEvent(
-	         'click'     // event type
-	         ,true      // can bubble?
-	         ,true      // cancelable?
-	      );
-	     var allowDefaultAction = link.dispatchEvent(e);           
-	   }
-
-	 }
-
-	 function isIE () {
-	  var myNav = navigator.userAgent.toLowerCase();
-	  return (myNav.indexOf('msie') != -1) ? true : false;
-	}
-	</script>
-
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
