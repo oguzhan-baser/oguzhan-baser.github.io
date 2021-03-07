@@ -26,7 +26,6 @@
 
   <body>
   	<script type="text/javascript">var submitted=false;</script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <div id="page-wraper">
       <!-- Sidebar Menu -->
       <div class="responsive-nav">
@@ -239,19 +238,14 @@ The better use of sources, the better world.</span
                     </div>
                     <div class="col-md-12">
                       <fieldset>
-						<input type="submit" value="Submit" /></form>
+						<button type="submit" id="form-submit" class="button">
+                          Send Message
+                        </button>
                       </fieldset>
                     </div>
                   </div>
                 </form>
-                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-                <script type="text/javascript">
-					$('#gform').on('submit', function(e) {
-	  					$('#gform *').fadeOut(2000);
-	  					$('#gform').prepend('Your submission has been processed...');
-				  		});
-				</script>
-    
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>    
               </div>
             </div>
           </div>
@@ -261,13 +255,20 @@ The better use of sources, the better world.</span
 
     <!-- Scripts -->
 	<!-- Bootstrap core JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/isotope.min.js"></script>
     <script src="assets/js/owl-carousel.js"></script>
     <script src="assets/js/lightbox.js"></script>
     <script src="assets/js/custom.js"></script>
         <!-- Form Script -->
-	
+	<script type="text/javascript">
+		$('#gform').on('submit', function handler(e) {
+			e.preventDefault();
+	  		$('#forms').fadeOut(2000, function(){ $('form').off('submit', handler).submit();});
+	  		$('#forms').prepend('Your submission has been processed...');
+			});
+	</script>
     <script>
       //according to loftblog tut
       $(".main-menu li:first").addClass("active");
