@@ -238,7 +238,7 @@ The better use of sources, the better world.</span
                     </div>
                     <div class="col-md-12">
                       <fieldset>
-						<button type="submit" id="form-submit" class="button">
+						<button type="submit" id="form-submit" onclick="return change(this);" class="button">
                           Send Message
                         </button>
                       </fieldset>
@@ -263,10 +263,10 @@ The better use of sources, the better world.</span
     <script src="assets/js/custom.js"></script>
         <!-- Form Script -->
 	<script type="text/javascript">
-		$('#contact').on('submit', function(e) {
-	  		$('#row *').fadeOut(2000);
-	  		$('#row').prepend('Your submission has been processed...');
-			});
+		function change(el){
+			if(el.value == "Send Message") el.value="Message is Sent";
+			else el.value == "Send Message";
+		}
 	</script>
     <script>
       //according to loftblog tut
