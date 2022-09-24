@@ -308,7 +308,7 @@ html {
 .section-heading .line-dec {
     width: 60px;
     height: 3px;
-    background-color: #3a3242;
+    background-color: #756783;
     margin: 10px auto;
 }
 
@@ -335,7 +335,7 @@ html {
 }
 
 .white-button a:hover {
-    background-color: #3a3242;
+    background-color: #756783;
     color: #fff;
 }
 
@@ -343,7 +343,7 @@ button {
     display: inline-block;
     padding: 10px 20px;
     background-color: #fff;
-    color: #3a3242;
+    color: #756783;
     font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.5px;
@@ -356,7 +356,7 @@ button {
 
 button:hover {
     outline: none;
-    background-color: #3a3242;
+    background-color: #756783;
     color: #fff;
 }
 
@@ -497,8 +497,8 @@ section.my-work .section-heading {
 }
 
 .isotope-toolbar input[type="radio"]:checked + span {
-    color: #3a3242;
-    border-bottom: 2px solid #3a3242;
+    color: #756783;
+    border-bottom: 2px solid #756783;
 }
 
 .isotope-box {
@@ -580,7 +580,7 @@ figure.snip1321 span {
 figure.snip1321 i {
   position: relative!important;
   font-size: 18px;
-  background-color: #3a3242;
+  background-color: #756783;
   width: 40px;
   height: 40px;
   display: inline-block;
